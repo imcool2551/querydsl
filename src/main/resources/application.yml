@@ -12,8 +12,9 @@ spring:
       hibernate:
         show_sql: false # System.out
         format_sql: true
+        # use_sql_comments: true # JPQL
         default_batch_fetch_size: 100
-  #    open-in-view: false # OSIV
+        # open-in-view: false # OSIV
 
   data:
     web:
@@ -25,4 +26,4 @@ spring:
 logging:
   level:
     org.hibernate.SQL: debug # logger
-#    org.hibernate.type: trace
+    # org.hibernate.type: trace
